@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <title>Form Page</title>
+  
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+  
+    <!-- AOS Smooth Scrolling -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+    <style>
+      html, body {
+        background-image: linear-gradient(#FA7268, #68f0fa);;
+      }
+
+      .container {
+        background-color: #fff;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .shadowhover {
+        position: relative; 
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+      }
+  
+      .shadowhover::before {
+        /* Position the pseudo-element. */
+        content: ' ';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+  
+        /* Create the box shadow at expanded size. */
+        box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.3);
+  
+        /* Hidden by default. */
+        opacity: 0;
+        transition: opacity 500ms;
+      }
+  
+      .shadowhover:hover::before {
+        opacity: 1;      
+      }
+    </style>
+  
+  </head>
+</head>
+<body>
+  <div class="container border p-5" style="width: 700px;">
+  <form action="">
+
+    <div class="form-row">
+        <div class="form-group col-12">
+          <label for="inputName">Your Name</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Enter your First and Second name">
+        </div>
+        <div class="form-group col-12">
+          <label for="inputCompany">Company Name</label>
+          <input type="text" class="form-control" id="inputCompany" placeholder="Enter your First and Second name">
+        </div>
+        <div class="form-group col-12">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+    </div>
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="aimOfBanner">Whats Aim of your AD?</label>
+        <input type="text" class="form-control" id="aimBanner" placeholder="New product, Discount/Sale, Event">
+      </div>
+
+      <div class="form-group">
+        <label for="textForBanner">Insert text of your banners:</label>
+        <input type="text" class="form-control" id="textBanner" placeholder="">
+      </div>
+
+      <div class="form-group">
+        <label for="companyInfo">We want to know you, tell us little but about your company:</label>
+        <textarea class="form-control" id="companyInfo" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Upload your pictures:</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+</div>
+</body>
+</html>
