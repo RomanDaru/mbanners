@@ -29,6 +29,13 @@
       .list-group-item {
         background-color: rgba(255, 255, 255, 0)
       }
+
+      #sidebar-wrapper {
+        max-height: 450px;
+        overflow: scroll;
+        overflow-x: hidden;
+        padding: 15px;
+      }
     </style>
   
   </head>
@@ -72,53 +79,56 @@
     </div>
 </div>
 
-<div id="content">
-  <div class="container py-5" style="width: 700px;">
-    <form action="">
-      <div class="p-5" style="border: 3px solid rgb(255,92,92); background: rgb(255,92,92);
-      background: -moz-linear-gradient(45deg, rgb(255,92,92) 0%, rgb(254,144,144) 55%, rgb(254,187,187) 100%);
-      background: -webkit-linear-gradient(45deg, rgb(255,92,92) 0%,rgb(254,144,144) 55%,rgb(254,187,187) 100%);
-      background: linear-gradient(45deg, rgb(255,92,92) 0%,rgb(254,144,144) 55%,rgb(254,187,187) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#febbbb',GradientType=1 ); box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);">
-        <div class="form-row">
-            <div class="form-group col-6">
-              <label for="inputName"></label>
-              <input type="text" class="form-control" id="inputName" placeholder="Full Name*">
-            </div>
-            <div class="form-group col-6">
-              <label for="inputCompany"></label>
-              <input type="text" class="form-control" id="inputCompany" placeholder="Company Name*">
-            </div>
-            <div class="form-group col-12">
-              <label for="inputEmail4"></label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email*">
-            </div>
-        </div>
-          
-        <div class="form-group d-flex flex-column justify-content-center align-items-center">
-          <label for="aimOfBanner">I want my banners to aim</label>
-          <input type="text" class="form-control" id="aimBanner" placeholder="New product, Discount/Sale, Event">
-        </div>
-
-        <div class="form-group d-flex flex-column justify-content-center align-items-center">
-          <label for="textForBanner">Texts you would love to see in your banners</label>
-          <input type="text" class="form-control mb-3" id="textBanner" placeholder="If you don't have whole texts, keywords are enough!">
-        </div>
-
-        <div class="form-group d-flex flex-column justify-content-center align-items-center">
-          <label for="companyInfo">Company description</label>
-          <textarea class="form-control" id="companyInfo" rows="3" placeholder="About Us section on your webpage will be just enough for us."></textarea>
-        </div>
-
-        <div class="form-group d-flex flex-column justify-content-center align-items-center">
-          <label for="exampleFormControlFile1">Upload your pictures:</label>
-          <input type="file" class="form-control-file mb-4" id="exampleFormControlFile1">
-          <button type="submit" class="btn btn-outline-light col-6">Submit</button>
-        </div>
+<div id="content" class="row p-2 m-5">
+  <form action="">
+    <div class="col-md-10 order-md-1">
+      <div class="form-row">
+          <div class="form-group col-6">
+            <label for="inputName"></label>
+            <input type="text" class="form-control" id="inputName" placeholder="Full Name*">
+          </div>
+          <div class="form-group col-6">
+            <label for="inputCompany"></label>
+            <input type="text" class="form-control" id="inputCompany" placeholder="Website*">
+          </div>
+          <div class="form-group col-12">
+            <label for="inputEmail4"></label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email*">
+          </div>
       </div>
-    </form>
+        
+      <div class="form-group d-flex flex-column justify-content-center align-items-center">
+        <label for="aimOfBanner">I want my banners to aim</label>
+        <input type="text" class="form-control" id="aimBanner" placeholder="New product, Discount/Sale, Event">
+      </div>
+
+      <div class="form-group d-flex flex-column justify-content-center align-items-center">
+        <label for="textForBanner">Texts you would love to see in your banners</label>
+        <textarea class="form-control mb-3" id="textBanner" placeholder="If you don't have whole texts, keywords are enough!"></textarea>
+      </div>
+
+      <div class="form-group d-flex flex-column justify-content-center align-items-center">
+        <label for="exampleFormControlFile1">Upload your pictures:</label>
+        <input type="file" class="form-control-file mb-4" id="exampleFormControlFile1">
+        <button type="submit" class="btn-lg btn-primary col-6">Submit</button>
+      </div>
+    </div> 
+  </form>
+  <div class="col-md-4 order-md-2 mb-4 bg-light border-right" id="sidebar-wrapper">
+    <h4 class="sidebar-heading">Never written a design brief before?</h4>
+    <p>Don't worry, its easy - keep it focused and to the point. Limiting your key selling points to 3 normally ensures this is best achieved.</p>
+    <p> Give consideration to aspects such as <strong>colours</strong>, any <strong>examples of similar banners</strong> you have seen and <strong>filesize limits</strong>, generally we try to stay around 150kb per banner or less, but if you require a specific limit just let us know.</p>
+    
+    <p>If you have <strong>images of products, logos or anything else you would like included</strong> please get these ready to be sent just after completing checkout where you will have a chance to attach these to your project ticket. Equally if you have a written brief you can attach this through the order form or later in your project area.</p>
+    <p><strong>Not quite sure what you want?</strong> Don't worry, just provide us the basics in the order form and we will create beautiful banners that compliment your website.</p>
+    <h4>Options</h4>
+    <p><strong>Animated:</strong> Includes moving elements such as text and images. We offer two types of animated banners - GIF and HTML5. Often animated banners may convert better due to their more prominent nature but they usually produce a larger file size and image quality may need to be set lower.</p>
+    <p><strong>Include PSD's:</strong> PSD's are the graphical format that we design your banners in before they are optimized into .jpg .gif or .png files ready for use on your website. If you have Adobe Photoshop and you purchase the original PSD files clients can modify their own banner details or design using this file in the future.
+    </p>
+    <p><strong>Rounded Corners:</strong> We'll design your banners with rounded corners to match a particular website or create a certain look.</p>
+    <p><strong>Google Adwords Compliant:</strong> We'll design your banners to comply with the current Adwords network requirements.</p>
   </div>
-</div>
+</div> 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
